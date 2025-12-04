@@ -7,3 +7,7 @@
 <span class="line"><span style="color:#D73A49">-</span><span style="color:#24292E"> Starred kamranahmedse</span><span style="color:#D73A49">/</span><span style="color:#24292E">developer</span><span style="color:#D73A49">-</span><span style="color:#24292E">roadmap</span></span>
 <span class="line"><span style="color:#D73A49">-</span><span style="color:#D73A49"> ...</span></span>
 <span class="line"></span></code></pre></div></div></div><p> You can <a href="https://docs.github.com/en/rest/activity/events?apiVersion=2022-11-28" target="_blank" rel="noopener noreferrer">learn more about the GitHub API here</a>.</p></li><li><p>Handle errors gracefully, such as invalid usernames or API failures.</p></li><li><p>Use a programming language of your choice to build this project.</p></li><li><p>Do not use any external libraries or frameworks to fetch the GitHub activity.</p></li></ul><hr><p>If you are looking to build a more advanced version of this project, you can consider adding features like filtering the activity by event type, displaying the activity in a more structured format, or caching the fetched data to improve performance. You can also explore other endpoints of the GitHub API to fetch additional information about the user or their repositories.</p></div>
+
+
+
+Link: https://roadmap.sh/projects/github-user-activity
