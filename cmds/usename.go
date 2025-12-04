@@ -9,9 +9,6 @@ import (
 	"github.com/hashicorp/cli"
 )
 
-// type response struct {
-// }
-
 type Username struct{ UI cli.ColoredUi }
 
 func validateInputArgs(args []string) error {
@@ -42,19 +39,14 @@ func (b *Username) Run(args []string) int {
 			b.UI.Error("something went wrong, please check the username")
 			return 1
 		}
-		// body, err := io.ReadAll(resp.Body)
-		// if err != nil {
-		// 	b.UI.Error("something went wrong, please try after sometime")
-		// 	return 1
-		// }
-		// body := resp.Body.Close()
+
 		b.UI.Output(resp.Status)
 		json.NewDecoder(resp.Body).Decode(&events)
 		for _, event := range events {
 			fmt.Printf("%s: %s by %s\n",
 				event["type"],
-				event["repo"].(map[string]interface{})["name"],
-				event["actor"].(map[string]interface{})["login"])
+				event["repo"].(map[string]any)["name"],
+				event["actor"].(map[string]any)["login"])
 		}
 		return 0
 	}
